@@ -23,7 +23,7 @@ async function login() {
    
 
     async function populate(){
-      const balances = await Moralis.Web3API.account.getTokenBalances({chain: "bsc"}).then(buildTableBalances);
+      const balances = await Moralis.Web3API.account.getTokenBalances({chain: "cro"}).then(buildTableBalances);
       console.log(balances)
     }
     
