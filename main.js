@@ -17,7 +17,7 @@ async function login() {
       populate()
 
     // get BSC native balance for a given address
-    const options = { chain: "bsc", address: address };
+    const options = { chain: "cro", address: address };
     const balance = await Moralis.Web3API.account.getNativeBalance(options);
     document.getElementById('balance').innerHTML = balance['balance'] / 10 **18 ;
    
