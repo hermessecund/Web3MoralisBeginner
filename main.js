@@ -66,8 +66,8 @@ async function getTokenPrice(){
   //Get token price on PancakeSwap v2 BSC
 const options = {
   address: document.getElementById('tokenAddress').value,
-  chain: "bsc",
-  exchange: "PancakeSwapv2",
+  chain: "cro",
+  exchange: "cronaswap",
 };
 const price = await Moralis.Web3API.token.getTokenPrice(options);
 //console.log(price)
